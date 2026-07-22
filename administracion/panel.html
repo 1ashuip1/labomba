@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prueba Firebase</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="bg-gray-100 hidden" id="bodyAdmin">
+
+
+<div class="flex min-h-screen">
+
+
+<!-- SIDEBAR -->
+
+<aside
+class="fixed left-0 top-0 h-screen w-72 
+bg-gradient-to-b from-purple-950 via-black to-black
+border-r border-purple-900
+shadow-2xl
+flex flex-col text-white">
+
+
+<div class="p-8 border-b border-purple-900">
+
+
+<img
+src="../assets/logo1.png"
+class="h-20 mx-auto">
+
+
+<p class="text-center text-gray-400 mt-3">
+Panel Administrativo
+</p>
+
+
+</div>
+
+
+
+<nav class="flex-1 p-5 space-y-3">
+
+
+<button
+data-seccion="cartelera"
+class="menuBtn flex items-center gap-4 w-full rounded-2xl px-5 py-4 bg-purple-700">
+
+<span>
+🎟️
+</span>
+
+Cartelera
+
+</button>
+
+
+
+<button
+data-seccion="youtube"
+class="menuBtn flex items-center gap-4 w-full rounded-2xl px-5 py-4 hover:bg-gray-800">
+
+<span>
+🎥
+</span>
+
+Transmisiones
+
+</button>
+
+
+
+<button
+data-seccion="personal"
+class="menuBtn flex items-center gap-4 w-full rounded-2xl px-5 py-4 hover:bg-gray-800">
+
+<span>
+👥
+</span>
+
+Personal
+
+</button>
+
+
+</nav>
+
+
+
+
+<div class="p-5 border-t border-gray-800">
+
+<button
+id="logoutBtn"
+class="w-full bg-red-700 hover:bg-red-800 rounded-xl py-4 font-bold">
+
+Cerrar sesión
+
+</button>
+
+
+</div>
+
+
+</aside>
+
+
+
+
+
+<!-- CONTENIDO -->
+
+<main class="ml-72 p-8 bg-gray-950 min-h-screen w-full">
+
+
+<div id="contenidoAdmin">
+
+
+<h1 class="text-white text-4xl font-bold">
+Bienvenido Administrador
+</h1>
+
+
+<p class="text-gray-400 mt-3">
+Selecciona una opción del menú
+</p>
+
+
+</div>
+
+
+</main>
+
+
+
+</div>
+
+
+<script type="module" src="panel.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Administración La Bomba</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+<body class="bg-[#080814]">
+
+
+<div class="min-h-screen grid lg:grid-cols-2">
+
+
+<!-- LOGIN -->
+
+<div class="flex items-center justify-center p-8">
+
+
+<div class="w-full max-w-md">
+
+
+<div class="text-center mb-10">
+
+
+<img 
+src="../assets/logo1.png"
+class="h-28 mx-auto mb-5">
+
+
+<h1 class="text-3xl font-bold text-white">
+Panel Administrativo
+</h1>
+
+
+<p class="text-gray-400 mt-2">
+Peña Show La Bomba
+</p>
+
+
+</div>
+
+
+
+<input
+id="email"
+type="email"
+placeholder="Correo administrador"
+class="w-full p-3 rounded-lg mb-4 bg-white">
+
+
+
+<input
+id="password"
+type="password"
+placeholder="Contraseña"
+class="w-full p-3 rounded-lg mb-5 bg-white">
+
+
+
+<button
+id="loginBtn"
+class="w-full bg-purple-600 hover:bg-purple-700 
+text-white p-3 rounded-lg font-bold">
+
+
+INGRESAR
+
+
+</button>
+
+
+
+<p id="error"
+class="text-red-400 text-center mt-4">
+</p>
+
+
+
+</div>
+
+</div>
+
+
+
+
+<!-- IMAGEN -->
+
+<div class="hidden lg:block relative">
+
+
+<img
+src="../assets/login-bg.jpg"
+class="absolute inset-0 w-full h-full object-cover">
+
+
+<div class="absolute inset-0 bg-black/60"></div>
+
+
+</div>
+
+
+
+</div>
+
+
+<script type="module" src="admin.js"></script>
+
+
+</body>
+</html>
